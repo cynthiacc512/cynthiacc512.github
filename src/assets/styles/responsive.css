@@ -23,6 +23,39 @@
         background-size: 32px;
     }
 
+    .menu-btn {
+        position: fixed;
+        cursor: pointer;
+        top: 40px;
+        right: 42px;
+        max-width: 32px;
+        max-height: 32px;
+        transition: all .5s ease-in-out;
+        z-index: 10;
+    }
+
+    .menu-btn.disabled > #burger2 {
+        display: none;
+    }
+
+    .menu-btn.disabled > #burger1 {
+        transform: rotate(45deg);
+    }
+    .menu-btn.disabled > #burger3 {
+        margin-top: -8px;
+        transform: rotate(-45deg);
+    }
+    
+    .menu-btn__burger {
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255,101,47,.2);
+        transition: all .5s ease-in-out;
+        margin: 6px 0px;
+    }
+    
     #navigation {
         position: fixed;
         top: 0;
